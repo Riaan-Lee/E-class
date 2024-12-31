@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Matching theme font */
+    background-color: #17202a; /* Dark background */
+    color: #ffffff; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b30000; /* Deep red for the header */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: #ffffff; /* Light text for logo */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Light text for links */
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: #990000; /* Lighter red for hover effect */
+}
+
+.faq-section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0f0f0; /* Slightly lighter text for headings */
+}
+
+.faq-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #d3d3d3; /* Muted text for introductory paragraph */
+}
+
+.faq {
+    background-color: #2c3e50; /* Dark card background */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.faq-title {
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 0;
+    color: #f0f0f0; /* Lighter text for titles */
+    position: relative;
+    padding-right: 20px;
+}
+
+.faq-title::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    color: #b30000; /* Deep red for toggle symbol */
+}
+
+.faq.open .faq-title::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    display: none;
+    font-size: 1rem;
+    color: #dcdcdc; /* Slightly muted text for content */
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.faq.open .faq-content {
+    display: block;
+}
+
+footer {
+    background-color: #b30000; /* Deep red for footer */
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff; /* Light text for footer */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    .faq-section {
+        padding: 20px;
+    }
+}
+a{
+    color: #b30000;
+}

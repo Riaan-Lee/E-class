@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: Arial, sans-serif; /* Adjust font as per Edmaso's style */
+  background-color:#17202a;
+  color: #333;
+}
+header {
+    background-color: #b30000; /* Deep red background for header */
+    padding: 15px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0f0f0;
+}
+
+/* WhatsApp Icon Animation */
+.fa-whatsapp {
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.fa-whatsapp:hover {
+    transform: scale(1.2);
+}
+p{
+    color: white;
+}
+
+/* Form Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.form {
+    background-color: #2c3e50;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.formgroup {
+    margin-bottom: 15px;
+}
+
+.formlabel {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.forminput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #7b7d7d;
+    color: white;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #7b7d7d;
+    color:white;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #990000; /* Deep red for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #b30000; /* Slightly lighter red for hover effect */
+}
+
+.form-link {
+    color:red;
+    text-decoration: none;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .form {
+        width: 90%;
+    }
+}

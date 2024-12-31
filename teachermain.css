@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #17202a; /* Dark background */
+    color: #ffffff; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #b30000; /* Deep red for header */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: #ffffff; /* Light text */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Light text */
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: #990000; /* Lighter red for hover */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+/* Cards for Assignments, Announcements, and Meetings */
+.assignment, .announcement, .meeting {
+    background-color: #2c3e50; /* Card background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.assignment h3, .meeting h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.assignment p, .announcement p, .meeting p {
+    font-size: 1rem;
+    color: #d3d3d3;
+}
+
+/* Links in Meetings */
+.meeting a {
+    color: #63E6BE; /* Highlight meeting links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.meeting a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+}

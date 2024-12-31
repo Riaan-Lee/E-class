@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #17202a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #b30000;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: #990000;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+/* Student Cards */
+.student-card {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.student-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    font-size: 1rem;
+    color: #d3d3d3;
+}
+
+.student-card a {
+    text-decoration: none;
+    color: #63E6BE;
+    font-weight: bold;
+}
+
+.student-card a:hover {
+    text-decoration: underline;
+}
+
+/* Notifications */
+.notification {
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
